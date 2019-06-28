@@ -6,7 +6,6 @@ Things you may want to know.
     ruby-2.5.5
 * Node version: \
     v12.4.0
-* 
 * Services: \
     postgress db \
     webpacker \
