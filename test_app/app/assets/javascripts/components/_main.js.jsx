@@ -1,7 +1,9 @@
-const Main = (props) => {
-  return (
-    <div>
-      <h1>Fruits are great!</h1>
-    </div>
-  )
-}
+var Main = React.createClass({
+  render() {
+    return(
+      <div>
+        <h1> Hello, World! </h1>
+      </div>
+    );
+  }
+});
