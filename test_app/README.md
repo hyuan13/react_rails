@@ -6,10 +6,11 @@ Things you may want to know.
     ruby-2.5.5
 * Node version: \
     v12.4.0
+* 
 * Services: \
-    postgress db
-    webpacker
-    web
+    postgress db \
+    webpacker \
+    web \
 * Deployment instructions:
 
 This guide shows you how to use Docker Compose to get the application up and run a **Rails/PostgreSQL/Webpacker/React** app on Ubuntu 18.04.
