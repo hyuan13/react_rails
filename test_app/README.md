@@ -59,4 +59,9 @@ docker-compose run web rake db:migrate
 ```
 docker-compose run web rake db:seed
 ```
+* Boot the app
+```
+docker-compose up
+```
+
 
