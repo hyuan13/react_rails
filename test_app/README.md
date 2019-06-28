@@ -63,9 +63,13 @@ docker-compose up
 
 Tips you may want to know.
 
-* Connect to Postgres database through docker
+* Connect to Postgres database in docker
 ```
 docker-compose run web rails c
+```
+* Create new database schema in docker
+```
+docker-compose run web rails g model tablename parameter1:type parameter2:type
 ```
 * List all docker images
 ```
