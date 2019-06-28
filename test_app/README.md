@@ -60,6 +60,37 @@ docker-compose run web rake db:seed
 ```
 docker-compose up
 ```
+
 Tips you may want to know.
+
+* Connect to Postgres database through docker
+```
+docker-compose run web rails c
+```
+* List all docker images
+```
+docker images -a
+```
+* Remove all docker images
+```
+docker rmi $(docker images -a -q)
+```
+* List all docker containers
+```
+docker ps -a
+```
+* Remove all docker containers
+```
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
+* List all docker volumes
+```
+docker volume ls
+```
+* Remove all  docker volumes
+```
+docker volume prune
+```
 
 
