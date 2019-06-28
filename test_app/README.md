@@ -53,7 +53,7 @@ docker-compose run web rake db:create
 ```
 * Database migration
 ```
-docker-compose run web rake db:migration
+docker-compose run web rake db:migrate
 ```
 * Populate the database with seed.rb
 ```
