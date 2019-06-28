@@ -1,9 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Things you may want to know.
 
 * Ruby version: \
     ruby-2.5.5
@@ -63,5 +60,6 @@ docker-compose run web rake db:seed
 ```
 docker-compose up
 ```
+Tips you may want to know.
 
 
