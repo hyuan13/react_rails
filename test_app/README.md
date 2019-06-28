@@ -4,7 +4,7 @@ Things you may want to know.
 
 * Ruby version: \
     ruby-2.5.5
-* Node versiom: \
+* Node version: \
     v12.4.0
 * Services: \
     postgress db
