@@ -69,7 +69,7 @@ docker images -a
 ```
 * Remove all docker images
 ```
-docker rmi $(docker images -a -q)
+docker rmi -f $(docker images -a -q)
 ```
 * List all docker containers
 ```
