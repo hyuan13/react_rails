@@ -23,7 +23,7 @@ git clone https://github.com/hyuan13/react_rails.git
 cd react_rails
 cd test_app
 ```
-* Manually delete node_modules and yarn.lock
+* Manually delete node_modules and yarn.lock if exist
 * Set up the files needed to build the app. App will run inside a Docker container containing its dependencies. Defining dependencies is done using a file called Dockerfile.
 ```
 docker-compose build
