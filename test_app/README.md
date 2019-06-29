@@ -55,7 +55,7 @@ docker-compose up
 
 Tips you may want to know.
 
-* Connect to Postgres database in docker
+* Invoke the postgres console from the command line
 ```
 docker-compose run web rails c
 ```
