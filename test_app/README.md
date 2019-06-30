@@ -59,6 +59,10 @@ Tips you may want to know.
 ```
 docker-compose run web rails c
 ```
+* View table contents in schema.rb in postgres console
+```
+tablename.all
+```
 * Create new database schema in docker
 ```
 docker-compose run web rails g model tablename parameter1:type parameter2:type
