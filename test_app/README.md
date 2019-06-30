@@ -62,6 +62,7 @@ docker-compose run web rails c
 * View table contents in schema.rb in postgres console
 ```
 tablename.all
+```
 * Delete table contents in schema.rb in postgres console
 ```
 tablename.delete_all
