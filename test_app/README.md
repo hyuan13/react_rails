@@ -125,4 +125,23 @@ heroku create
 ```
  heroku git:remote -a Heroku-app’s-name
 ```
+* Confirm remote has been set for your app.
+```
+git remote -v
+```
+* Precompile all the assets.
+```
+docker-compose run web bundle exec rake assets:precompile
+```
+* Commit the file to your repo.
+```
+git add public/assets -f
+git add public/packs -f
+git commit -m "Add precompiled assets and packs"
+```
+* Deploy your app to Heroku.
+```
+git push heroku master
+```
+
 
