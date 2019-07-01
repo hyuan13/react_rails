@@ -1,4 +1,4 @@
-# React+Rails+Docker+Heroku
+# React+Webpacker+Rails+Docker+Heroku
 
 ## Things you may want to know.
 
