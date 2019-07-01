@@ -34,81 +34,87 @@ docker-compose run web bundle install
 ```
 docker-compose run web yarn install
 ```
-* Create the database
+* Create the database.
 ```
 docker-compose run web rake db:create
 ```
-* Database migration
+* Database migration.
 ```
 docker-compose run web rake db:migrate
 ```
-* Populate the database with seed.rb
+* Populate the database with seed.rb.
 ```
 docker-compose run web rake db:seed
 ```
-* Boot the app
+* Boot the app.
 ```
 docker-compose up
 ```
 
 Tips you may want to know.
 
-* Invoke the postgres console from the command line
+* Invoke the postgres console from the command line.
 ```
 docker-compose run web rails c
 ```
-* View table contents in schema.rb in postgres console
+* View table contents in schema.rb in postgres console.
 ```
 tablename.all
 ```
-* Delete table contents in schema.rb in postgres console
+* Delete table contents in schema.rb in postgres console.
 ```
 tablename.delete_all
 ```
-* Create new database schema in docker
+* Create new database schema in docker.
 ```
 docker-compose run web rails g model tablename parameter1:type parameter2:type
 ```
-* List all docker images
+* List all docker images.
 ```
 docker images -a
 ```
-* Remove all docker images
+* Remove all docker images.
 ```
 docker rmi -f $(docker images -a -q)
 ```
-* List all docker containers
+* List all docker containers.
 ```
 docker ps -a
 ```
-* Remove all docker containers
+* Remove all docker containers.
 ```
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
-* List all docker volumes
+* List all docker volumes.
 ```
 docker volume ls
 ```
-* Remove all  docker volumes
+* Remove all  docker volumes.
 ```
 docker volume prune
 ```
-* Precompile all the assets
+* Precompile all the assets.
 ```
 docker-compose run web bundle exec rake assets:precompile
 ```
 
 Rebuild the application.
-* If you make changes to the Gemfile
+* If you make changes to the Gemfile.
 ```
 docker-compose run web bundle install
 docker-compose build
 ```
-* If you make changes to the package.json
+* If you make changes to the package.json.
 ```
 docker-compose run web yarn install
 docker-compose build
 ```
 
-Deployment instructions
+Deployment instructions on Heroku
+* Create a heroku.yml file in your application’s root directory. 
+* Download Heroku CLI and sign in your account.
+```
+heroku login
+```
+
