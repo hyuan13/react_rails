@@ -117,4 +117,12 @@ Deployment instructions on Heroku
 ```
 heroku login
 ```
+* Creates a new empty application on Heroku.
+```
+heroku create
+```
+* Add a remote to your local repository.
+```
+ heroku git:remote -a Heroku-app’s-name
+```
 
