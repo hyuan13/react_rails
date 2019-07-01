@@ -1,6 +1,6 @@
 # README
 
-Things you may want to know.
+## Things you may want to know.
 
 * Ruby version: \
     ruby-2.5.5
@@ -11,7 +11,7 @@ Things you may want to know.
     webpacker \
     web
 
-This guide shows you how to use Docker Compose to get the application up and run a **Rails/PostgreSQL/Webpacker/React** app on Ubuntu 18.04.
+## This guide shows you how to use Docker Compose to get the application up and run a **Rails/PostgreSQL/Webpacker/React** app on Ubuntu 18.04.
 
 * Download react_rails into your local directory.
 ```
@@ -51,7 +51,7 @@ docker-compose run web rake db:seed
 docker-compose up
 ```
 
-Tips you may want to know.
+## Tips you may want to know.
 
 * Invoke the postgres console from the command line.
 ```
@@ -99,7 +99,7 @@ docker volume prune
 docker-compose run web bundle exec rake assets:precompile
 ```
 
-Rebuild the application.
+## Rebuild the application.
 * If you make changes to the Gemfile.
 ```
 docker-compose run web bundle install
@@ -111,7 +111,7 @@ docker-compose run web yarn install
 docker-compose build
 ```
 
-Deployment instructions on Heroku
+## Deployment instructions on Heroku
 * Create a heroku.yml file in your application’s root directory. 
 * Download Heroku CLI and sign in your account.
 ```
