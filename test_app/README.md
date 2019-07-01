@@ -113,7 +113,7 @@ docker-compose build
 
 ## Deployment instructions on Heroku
 * Create a heroku.yml file in your application’s root directory. 
-* Download Heroku CLI and sign in your account.
+* Download and install Heroku CLI and sign in to your account.
 ```
 heroku login
 ```
