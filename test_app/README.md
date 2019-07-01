@@ -23,7 +23,6 @@ git clone https://github.com/hyuan13/react_rails.git
 cd react_rails
 cd test_app
 ```
-* Manually delete node_modules and yarn.lock if exist
 * Set up the files needed to build the app. App will run inside a Docker container containing its dependencies. Defining dependencies is done using a file called Dockerfile.
 ```
 docker-compose build
@@ -96,5 +95,19 @@ docker volume ls
 ```
 docker volume prune
 ```
+* Precompile all the assets
+```
+docker-compose run web bundle exec rake assets:precompile
+```
 
-
+Rebuild the application.
+* If you make changes to the Gemfile
+```
+docker-compose run web bundle install
+docker-compose build
+```
+* If you make changes to the package.json
+```
+docker-compose run web yarn install
+docker-compose build
+```
