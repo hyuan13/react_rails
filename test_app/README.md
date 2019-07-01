@@ -1,4 +1,4 @@
-# README
+# React+Rails+Docker+Heroku
 
 ## Things you may want to know.
 
