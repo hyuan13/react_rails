@@ -143,5 +143,12 @@ git commit -m "Add precompiled assets and packs"
 ```
 git push heroku master
 ```
+* Add configure Heroku Postgres
+* Create database on Heroku application
+```
+heroku run rake db:create
+heroku run rake db:migrate
+heroku run rake db:seed
+```
 
 
