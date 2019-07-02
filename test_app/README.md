@@ -1,4 +1,4 @@
-# React+Webpacker+PostgresSQL+Rails+Docker+Heroku
+# React+Webpacker+PostgreSQL+Rails+Docker+Heroku
 
 ## Things you may want to know.
 
@@ -11,7 +11,7 @@
     webpacker \
     web
 
-## This guide shows you how to use Docker Compose to get the application up and run a **React/Webpacker/PostgresSQL/Rails** app on Ubuntu 18.04 and deploy it on Heroku.
+## This guide shows you how to use Docker Compose to get the application up and run a **React/Webpacker/PostgreSQL/Rails** app on Ubuntu 18.04 and deploy it on Heroku.
 
 * Download react_rails into your local directory.
 ```
